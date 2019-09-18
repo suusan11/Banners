@@ -9,6 +9,7 @@
   height: 250px;
   background-image: linear-gradient(#bb377d, #fbd3e9);
   margin: 100px auto;
+  animation: changeColor 5s forwards 1s;
 
   .bg-box {
     width: 300px;
@@ -59,5 +60,20 @@
     position: absolute;
     bottom: 0;
     width: 300px;
+  }
+}
+
+@keyframes changeColor {
+  25% {
+    background-image: linear-gradient(#0ba360, #3cba92);
+  }
+  50% {
+    background-image: linear-gradient(#76b852, #8dc26f);
+  }
+  75% {
+    background-image: linear-gradient(#ffb347, #ffcc33);
+  }
+  100% {
+    background-image: linear-gradient(#76b852, #bb377d, #ffb347, #0ba360);
   }
 }
