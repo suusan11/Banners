@@ -36,6 +36,22 @@
       font-family: 'Magnolia';
       font-size: 40px;
       color: #ffffff;
+      animation: changeFont 5s forwards 1s;
+    }
+
+    @keyframes changeFont {
+      25% {
+        content: 'Kalium';
+      }
+      50% {
+        content: 'Magnesium';
+      }
+      75% {
+        content: 'Vitamin';
+      }
+      100% {
+        content: 'Get Fresh';
+      }
     }
   }
 
